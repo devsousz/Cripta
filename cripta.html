@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripta</title>
+    <link rel="stylesheet" type="text/css" href="criptaStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/a.png" />
+    </header>
+
+    <main>
+
+        <div class="entrada">
+            <textarea class="entrada__msg" placeholder="Digite sua mensagem " rows="15" cols="45"></textarea>
+
+            <div class="info">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="botoes__crip" onclick="botaoCrip()">CRIPTOGRAFAR</button>
+                <button class="botoes__decrip" onclick="botaoDecrip()">DESCRIPTOGRAFAR</button>
+            </div>
+        </div>
+
+            <div class="saida">
+                 <textarea class="saida__msg" rows="16" cols="26" placeholder= "Nenhuma mensagem encontrada"></textarea>
+                 <button class="saida__cop" onclick="botaoCopiar()">Copiar</button>
+            </div>
+       
+    </main>
+
+    <footer>Desenvolvido por Márcia Souza</footer>
+<script src="criptaScript.js"></script>
+</body>
+
+</html>

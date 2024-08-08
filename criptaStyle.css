@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    background-color: #ebe4d6;
+}
+
+.logo {
+    margin: 2% 0 0 2%;
+    width: 4%;
+}
+
+main {
+    display:flex;
+    width: 100%;
+}
+
+.entrada {
+    width: 55%;
+    margin: 3% 4% 1% 8%;
+}
+
+.entrada__msg {
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    background-color: #ebe4d6;
+}
+
+.info {
+    color: #347660;
+    margin: 0 0 0 3%;
+    font-size: 1.3rem;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.botoes__crip {
+    margin: 1% 4% 0 1%;
+    border-radius: 15px;
+    height: 30%;
+    width: 40%;
+    background-color: #0c3167;
+    color: #e6dcbe;
+    border: 2px solid #0c3167;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 1rem;
+}
+
+.botoes__decrip {
+    margin: 1% 1% 0 0;
+    border-radius: 15px;
+    height: 30%;
+    width: 40%;
+    background-color: #2f8669;
+    color: #e6dcbe;
+    border: 2px solid #2f8669;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 1rem;
+}
+
+.saida {
+    width: 40%;
+    margin: 3% 4% 0% 3%;
+}
+
+
+::placeholder {
+    color: #247156;
+}
+
+.saida__msg {
+    width: 90%;
+    background-color: #95cab2;
+    background-image: url("img/boneca.png");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center 70%;
+    padding: 10% 6% 10% 6%;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #347660;
+    border: none;
+    outline: none;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.saida__cop {
+    display: none;
+    border-radius: 13px;
+    height: 11%;
+    width: 102%;
+    background-color: #2f8669;
+    color: #e6dcbe;
+    border: 2px solid #2f8669;
+    font-family: "Edu AU VIC WA NT Han", cursive;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-top: -3vw;
+    box-shadow: 3px 3px 3px #345e50;
+    position: relative;
+}
+
+footer {
+    background-color: #95cab2;
+    color: #e8e1cc;
+    text-align: center;
+    font-size: 1rem;
+    padding: .5%;
+    margin-top: 4%;
+}
+
+@media screen and (max-width: 950px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .entrada {
+        width: 98%;
+        margin: 2%;
+    }
+
+    .entrada__msg {
+        padding-left: 6%;
+        font-size: 1.2rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .botoes {
+        width: 98%;
+    }
+
+    .botoes__crip,
+    .botoes__decrip {
+        border-radius: 7px;
+        height: auto;
+        width: 100%;
+        font-size: .7rem;
+        padding: 2%;
+        margin: 0% 0.7% 0% 1%;
+    }
+
+    .saida {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 2% 0% 5% 1.9%;
+    }
+
+    .saida__msg {
+        padding: 2% 4.5% 0% 4%;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        box-shadow: none;
+        background-size: 50%;
+    }
+    .saida__cop {
+        height: auto;
+        width: 98.5%;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-shadow: none;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+}
