@@ -55,7 +55,7 @@ function verificarTexto() {
         saida.style.backgroundImage = 'none';
         botaoCopiar.style.display = 'block';
     } else {
-        saida.style.backgroundImage = 'url("boneca.png")';
+        saida.style.backgroundImage = 'url("img/boneca.png")';
         botaoCopiar.style.display = 'none';
     }
 }
